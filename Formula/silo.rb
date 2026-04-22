@@ -16,10 +16,10 @@
 class Silo < Formula
   desc "Run dev tools in isolated Apple Container VMs"
   homepage "https://github.com/rchekalov/silo"
-  url "https://github.com/rchekalov/silo/archive/refs/tags/v0.4.15.tar.gz"
-  sha256 "e75ae9eae69696216d4454972e4dbfecf86854b97bfde9faf4f985688cef80e4"
+  url "https://github.com/rchekalov/silo/archive/refs/tags/v0.4.16.tar.gz"
+  sha256 "8d2c78debd4cb5d4f609540f0f4f6eb4ae61fd9678ae3962420fcd0b46561776"
   license "Apache-2.0"
-  version "0.4.15"
+  version "0.4.16"
 
   depends_on :macos
   depends_on arch: :arm64
