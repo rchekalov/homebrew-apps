@@ -1,4 +1,4 @@
-# Canonical formula for the rchekalov/homebrew-silo tap.
+# Canonical formula for the rchekalov/homebrew-apps tap.
 #
 # This file lives at scripts/homebrew/silo.rb in rchekalov/silo. On every
 # tagged release, .github/workflows/release.yml copies it into the tap's
@@ -7,15 +7,15 @@
 #
 # Users install with (the three-part form avoids a name collision with
 # the homebrew-cask `silo` cask, which is an unrelated macOS app):
-#   brew install rchekalov/silo/silo
+#   brew install rchekalov/apps/silo
 
 class Silo < Formula
   desc "Run dev tools in isolated Apple Container VMs"
   homepage "https://github.com/rchekalov/silo"
-  url "https://github.com/rchekalov/silo/releases/download/v0.4.18/silo-0.4.18-macos-arm64.tar.gz"
-  sha256 "a6120ac32bb745bac3d65304c75a346089a8fd9ff5d40a94cb4116488de9834b"
+  url "https://github.com/rchekalov/silo/releases/download/v0.4.19/silo-0.4.19-macos-arm64.tar.gz"
+  sha256 "a2a6cb837a05fe0edf0a1830964b658db431a00ec0ec79bd9db3341109cd314f"
   license "Apache-2.0"
-  version "0.4.18"
+  version "0.4.19"
 
   depends_on :macos
   depends_on arch: :arm64
