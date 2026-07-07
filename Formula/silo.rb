@@ -13,13 +13,15 @@ class Silo < Formula
   desc "Run dev tools in isolated Apple Container VMs"
   homepage "https://github.com/rchekalov/silo"
   url "https://github.com/rchekalov/silo/releases/download/v0.6.2/silo-0.6.2-macos-arm64.tar.gz"
+  version "0.6.2"
   sha256 "0677de6d98453fd7fabaf85f99b3801204409769b210a92634d6b5880c5fc1b8"
   license "Apache-2.0"
-  version "0.6.2"
 
-  depends_on :macos
   depends_on arch: :arm64
-  depends_on macos: :tahoe # macOS 26
+  depends_on :macos
+  on_macos do
+    depends_on macos: :tahoe # macOS 26
+  end
 
   def install
     bin.install "bin/silo"
